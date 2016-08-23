@@ -1,0 +1,65 @@
+.cnt-notification-list {
+  overflow:hidden;
+  line-height: 20px;
+  position: absolute;
+  right: 3em;
+  bottom: 6em;
+  width: 35em;
+}
+
+.cnt-notification {
+    border-radius: 7px;
+    min-height: 8em;
+    margin-bottom: 0.8em;
+}
+
+.cnt-notification-success {
+  background: none repeat scroll 0 0 rgb(75, 81, 87);
+  border: 8px solid #5CA212;
+  color: white;
+}
+
+.cnt-notification-warning {
+  background: none repeat scroll 0 0 rgb(75, 81, 87);
+  border: 8px solid #F13F07;
+  color: white;
+}
+
+.cnt-notification h4 {
+  width: 100%;
+  margin: 0;
+  padding: 2px 5px 5px 8px;
+  display: inline-block;
+}
+
+.cnt-notification-success h4 {
+  background-color: #5CA212;
+}
+
+.cnt-notification-warning h4 {
+  background-color: #F13F07;
+}
+
+.cnt-notification p {
+  padding: 1.8em;
+}
+
+.cnt-notification .form-group {
+  padding: 0 20px 0px 20px;
+}
+
+.cnt-notification .btn {
+  margin-left: 20px;
+}
+
+.cnt-notification .btn-notification-close {
+  width: 16px;
+  height: 20px;
+  float: right;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.cnt-notification strong {
+  font-size: 120%
+}

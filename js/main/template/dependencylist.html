@@ -1,0 +1,33 @@
+  <div class="cnt-deplist">
+    <h3>{{project.name}}  <small>({{ project.version.rawVersionString }})</small></h3>
+      <div class="cnt-deplist-inner">
+        <div class="list-group">
+
+        </div>
+      </div>
+  </div>
+  <div class="cnt-left-buttons pull-right">
+						<label for="chb-show-all-deps">Show All Dependencies</label>
+							<input type="checkbox" id="chb-show-all-deps" checked />
+						<a class="btn btn-default btn-reset" href="#">Reset versions</a>
+						<a class="btn btn-primary btn-view-packagejson" href="#">View my updated package.json</a>
+					</div>
+
+
+          <div class="modal fade" tabindex="-1" role="dialog" id="dlg-package-json">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">You updated <code>package.json</code> file </h4>
+                </div>
+                <div class="modal-body">
+                  <textarea readonly="readonly" cols="65" rows="30" style="font-family: monospace; background-color: lightgray"></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary btn-clipboard" data-clipboard-target="textarea">Copy to Clipboard</button>
+                  <button type="button" class="btn btn-primary btn-close">Close</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->

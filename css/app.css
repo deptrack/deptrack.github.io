@@ -1,0 +1,108 @@
+.cnt-header {
+  margin: 0 0 0 0 ;
+  height: 10%;
+}
+
+.cnt-header h1 {
+  margin: 0 0 0 0;
+  display: inline;
+}
+
+.form-txt-github-repo {
+  padding-bottom: 30px;
+}
+
+.txt-version {
+  font-weight: bold;
+}
+
+.cnt-left {
+    height: 90%;
+}
+
+.cnt-left-buttons {
+  height: 8%;
+  padding: 0.9em 0 0 0.3em;
+}
+
+.panel-warning .panel-heading {
+  background-color: #D05B15;
+}
+
+.cnt-deplist {
+  height: 92%;
+}
+
+
+.cnt-deplist h3 {
+  display: inline;
+  height: 5%;
+}
+
+.cnt-deplist-inner {
+  direction: rtl;
+  overflow-y: auto;
+  height: 95%;
+}
+
+.cnt-deplist-inner .list-group {
+  direction: ltr;
+}
+
+.cnt-deplist span:hover {
+  cursor: pointer;
+}
+
+.cnt-deplist select {
+  float: right;
+  background-color: #333;
+  color: #eee;
+  padding: 3px;
+  box-shadow: 0px 0px 3px 2px #999;
+  width: 12em;
+}
+
+.cnt-newsfeed {
+  height: 90%;
+  overflow-y: auto;
+  padding-right: 1em;
+}
+
+.cnt-newsfeed-filters label {
+  font-weight: normal;
+}
+
+.cnt-newsfeed-filters {
+  background-color: #338433
+}
+
+.cnt-newsfeed .panel-info .panel-heading {
+  background-color: #459DDE
+}
+
+.cnt-newsfeed-filter {
+  margin-right: 1em;
+}
+
+.newsfeed-entry-author {
+  margin-right: 5em;
+}
+
+.cnt-newsfeed-entry-operations {
+  width: 100%;
+  padding-top: 2.5em;
+}
+
+.cnt-newsfeed-entry-operations a {
+  margin-left: 0.3em;
+  margin-right: 1.5em
+}
+
+.cnt-newsfeed-entry-details {
+  padding-top: 3em;
+}
+
+code , pre {
+  color: #c8c8c8;
+  background-color: #484e55;
+}

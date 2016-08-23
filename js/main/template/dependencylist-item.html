@@ -1,0 +1,12 @@
+{{name}}
+{{#if isObsolete}}
+<span class="txt-version text-warning">{{originalVersion.versionNumber}}</span>
+<select>
+   <option value="{{originalVersion.versionNumber.rawVersionString}}">Update to...</option>
+   {{#each suggestedVersions}}
+   <option value="{{value}}">{{label}}</option>
+   {{/each}}
+</select>
+{{else}}
+<span class="txt-version text-success">{{originalVersion.versionNumber}}</span>
+{{/if}}

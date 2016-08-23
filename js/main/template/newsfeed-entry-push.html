@@ -1,0 +1,22 @@
+<div class="panel-heading">
+    <a href="{{author.avatarUrl}}">{{author.login}}</a>
+        pushed {{commitMessages.length}} commits to {{relatedDependency.name}}
+</div>
+<div class="panel-body">
+	<span class="newsfeed-entry-author pull-right">
+       <img src="{{author.avatarUrl}}" width="32" height="32"/>
+       <a href="{{author.githubProfileUrl}}">{{author.login}}</a>
+    </span>
+
+    <ul>
+    {{#each commitMessages}}
+        <li>{{.}}</li>
+    {{/each}}
+    </ul>
+
+    <div class="cnt-newsfeed-entry-operations pull-right">
+        <a href="{{externalLinkUrl}}" target="_blank">View {{entity}}</a>
+        <a href="{{githubProjectUrl}}" target="_blank">View Repository</a>
+        <span class="pull-right">{{createdFromNow}}</span>
+    </div>
+</div>
