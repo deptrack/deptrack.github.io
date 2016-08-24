@@ -28,7 +28,7 @@ define(["require", "exports", "jquery", "handlebars", "text!../template/layout.h
                         $notif.fadeOut();
                     });
                 });
-            }, 2000);
+            }, 12000);
         };
         LayoutView.prototype.setCenterPane = function (pane) {
             pane.$el.appendTo(this.$el.find(".cnt-newsfeed"));
