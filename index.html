@@ -122,8 +122,8 @@
                                     title="Please specify the GitHub repository of your npm package"
                                     aria-hidden="true"></span></label>
                             <input type="text" class="form-control" id="txt-repo-url" placeholder="https://">
-                            <small>No idea? <a
-                                    href="javascript:$('#txt-repo-url').val('https://raw.githubusercontent.com/vuejs/vue/dev/package.json')"
+                            <small>No idea? <a style="cursor:pointer"
+                                    onclick="event.preventDefault();$('#txt-repo-url').val('https://raw.githubusercontent.com/vuejs/vue/dev/package.json')"
                                     data-toggle="tooltip" data-placement="right" title=""
                                     data-original-title="Click here to try out the app with node-browserify">
                                         Try it with <b>vue.js</b></a>
