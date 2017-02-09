@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="/img/icon-32x32.png" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,7 @@
         _paq.push(['trackPageView']);
         _paq.push(['enableLinkTracking']);
         (function () {
-            if (window.location == "localhost"){
+            if (window.location == "localhost" || window.location.hostname == "localhost") {
                 return;
             }
             var u = "//piwik.cyclonephp.org/";
@@ -25,7 +26,7 @@
             g.type = 'text/javascript';
             g.async = true;
             g.defer = true;
-            g.src = u + 'piwik.js';
+            g.src = '/js/piwik.js';
             s.parentNode.insertBefore(g, s);
         })();
     </script>
@@ -36,141 +37,63 @@
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap-slate/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <link rel="stylesheet" type="text/css" href="css/deplist.css"/>
+    <link rel="stylesheet" type="text/css" href="css/newsfeed.css"/>
+    <link rel="stylesheet" type="text/css" href="css/launcher.css"/>
+    <link rel="stylesheet" type="text/css" href="css/progressbar.css"/>
     <link rel="stylesheet" type="text/css" href="css/notifications.css"/>
-
-    <link href="css/landing/grayscale.css" rel="stylesheet">
-    <link href="css/landing/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <div class="navbar-brand">
-                <a class="page-scroll" href="#page-top" style="text-decoration: none;">
-                    <img class="logo" src="img/logo-scratch-opaque-bg.png">
-                    <span class="light logo-text"> ~ keep an eye on your dependencies</span>
-                </a>
-            </div>
+<body>
+<div class="container-fluid">
+    <div class="row cnt-header">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <img class="logo" src="img/logo.png" height="50" width="150">
+            <span class="light logo-text"> ~ keep an eye on your dependencies</span>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="navbar-right" data-toggle="tooltip" data-placement="bottom"
-             title="Get notified about the improvements of DepTrack (at most 1 email per month)" aria-hidden="true">
-
-            <!-- Begin MailChimp Signup Form -->
-            <div id="mc_embed_signup">
-                <form action="//deptrack.us13.list-manage.com/subscribe/post?u=90b110ad878d24aeadda19983&amp;id=6b56eb8cc9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate navbar-form" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                        <input placeholder="email@example.com" type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_90b110ad878d24aeadda19983_6b56eb8cc9" tabindex="-1" value=""></div>
-                        <input type="submit" value="Subscribe" name="subscribe"
-                               id="mc-embedded-subscribe"
-                               class="button btn btn-default"
-                               onclick="javascript:_paq.push(['trackEvent', 'User', 'Landing_Subscribe']);">
-                    </div>
-                </form>
-            </div>
-            <!--End mc_embed_signup-->
-        </div>
-        <!-- /.navbar-collapse -->
+        <div class="col-lg-2"></div>
     </div>
-    <!-- /.container -->
-</nav>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4">
+            <h1>Welcome to DepTrack</h1>
+            <p>
+                DepTrack is a handy dependency management solution to take control over your npm modules.
+            </p>
+            <p>
+                Just provide your npm package.json file and DepTrack will give you detailed information about your dependencies' latest versions.
+                Take a look at your dependencies' contribution activity like recently opened issues, pull requests and git commits.
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <h1>Try it out</h1>
+            <div class="cnt-launcher-outer">
 
-<!-- Intro Header -->
-<header class="intro">
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2>DepTrack helps you to keep your project dependencies up to date</h2>
-                    <p>Just provide your npm package.json file and DepTrack will give you detailed information about
-                        your dependencies' latest versions.</p>
-                    <p>Take a look at your dependencies' contribution activity like recently opened issues, pull
-                        requests and git commits.</p>
-                    <div class="try-button-container">
-                        <h3 class="try-button-header">Try it out</h3>
-                        <a href="#packagejson-form" class="btn btn-circle page-scroll"
-                           onclick="javascript:_paq.push(['trackEvent', 'User', 'LandingTry']);">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
+        <div class="col-lg-2"></div>
     </div>
-</header>
-
-
-<!-- Download Section -->
-<section id="packagejson-form" class="content-section text-center">
-    <div class="download-section">
-        <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-                <div id="lbl-empty" class="alert alert-danger" style="display: none">
-
-                </div>
-                <div>
-                    <div class="form-container">
-                        <div class="form-group form-txt-github-repo">
-                            <label class="text-left">Where is your package.json <span
-                                    class="help-tooltip glyphicon glyphicon-question-sign" data-toggle="tooltip"
-                                    data-placement="right"
-                                    title="Please specify the GitHub repository of your npm package"
-                                    aria-hidden="true"></span></label>
-                            <input type="text" class="form-control" id="txt-repo-url" placeholder="https://">
-                            <small>No idea? <a style="cursor:pointer"
-                                    onclick="event.preventDefault();$('#txt-repo-url').val('https://raw.githubusercontent.com/vuejs/vue/dev/package.json')"
-                                    data-toggle="tooltip" data-placement="right" title=""
-                                    data-original-title="Click here to try out the app with node-browserify">
-                                        Try it with <b>vue.js</b></a>
-                            </small>
-                        </div>
-                        <div class="form-group">
-                            <label>...Or just copy-paste the raw contents of you package.json</label>
-                            <textarea id="txt-package-json"class="form-control" rows="10" cols="20" placeholder="{}"></textarea>
-                        </div>
-                        <input id="btn-deps" class="btn btn-default btn-lg" value="Let's see the dependencies"
-                               type="button">
-                    </div>
-                </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <h1>How does it work?</h1>
+            <div class="userguide">
+                <img src="img/screenshot-1.png" width="500" height="281"/>
+                <span class="arrow">&nbsp;&raquo;&nbsp;</span>
+                <img src="img/screenshot-2.png" width="500" height="281"/>
             </div>
         </div>
+        <div class="col-lg-2"></div>
     </div>
-</section>
 
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <span class="light">2016 DepTrack</span>
-            </div>
-            <div class="col-md-6 text-right">
-                <ul class="list-inline quicklinks">
-                    <li><a href="terms.html">Terms of Use</a>
-                    </li>
-                    <li><a href="privacy.html">Privacy Policy</a>
-                    </li>
-                    <li><a href="mailto:contact@deptrack[dot]io?Subject=HelloDepTrack">Contact us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div class="cnt-footer">
+          <span class="cnt-links">
+            <a href="/privacy.html">Privacy Policy</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="/terms.html">Terms of Use</a>
+          </span>
     </div>
-</footer>
-
-<!-- Plugin JavaScript -->
-<script src="js/landing/jquery.easing.min.js"></script>
-
-<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="js/landing/grayscale.js"></script>
+</div>
 </body>
 </html>

@@ -15,9 +15,14 @@ requirejs.config({
         'jasmine-html'
       ]
     },
-		"markdown": {
-			exports: "markdown"
-		}
+    markdown: {
+      exports: 'markdown'
+    },
+    bootstrap: {
+      deps: [
+        'jquery'
+      ]
+    }
   },
   paths: {
     backbone: '../bower_components/backbone/backbone',
@@ -39,7 +44,8 @@ requirejs.config({
     'promise-js': '../bower_components/promise-js/promise',
     semver: '../bower_components/semver/semver.browser',
     clipboard: '../bower_components/clipboard/dist/clipboard',
-    markdown: '../bower_components/markdown/lib/markdown'
+    bootstrap: '../bower_components/bootstrap/dist/js/bootstrap',
+    'markdown-it': '../bower_components/markdown-it/dist/markdown-it'
   },
   packages: [
 

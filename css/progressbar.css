@@ -1,0 +1,26 @@
+.progressbar {
+    padding: 20px 20px 20px 20px;
+}
+
+.bar-outer {
+    height: 1.7em;
+    width: 100%;
+    border-radius: 0.3em;
+    border: 1px solid #888;
+}
+
+
+.bar-inner {
+    height: 100%;
+    width: 100%;
+    /* background-color: #459DDE; */
+    background: linear-gradient(#068cbd 0%, #14629e 35%, #14629e 65%, #068cbd 100%);
+    border-radius: 0.3em;
+}
+
+.progressbar p  {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+}

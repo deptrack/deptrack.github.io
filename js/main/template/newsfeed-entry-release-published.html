@@ -6,7 +6,13 @@
        <img src="{{author.avatarUrl}}" width="32" height="32"/>
        <a href="{{author.githubProfileUrl}}">{{author.login}}</a>
     </span>
-    {{relatedDependency.name}} <code>{{tagName}}</code> has been released.
+    {{relatedDependency.name}} <code>{{tagName}}</code> has been
+    {{#if isTag}}
+        tagged
+    {{else}}
+        released
+    {{/if}}
+    .
     Your current version is <code>{{relatedDependency.originalVersion.versionString}}</code>
     ({{noOfNewerReleases}} releases behind).
     <div class="cnt-newsfeed-entry-operations pull-right">

@@ -1,0 +1,100 @@
+
+.cnt-deplist {
+  height: 92%;
+}
+
+.cnt-deplist .list-group-item {
+  font-size: 0.96vw;
+}
+
+.cnt-deplist h3 {
+  display: inline;
+  height: 5%;
+}
+
+.cnt-deplist-inner {
+  direction: rtl;
+  overflow-y: auto;
+  height: 95%;
+}
+
+.cnt-deplist-inner .list-group {
+  direction: ltr;
+}
+
+.cnt-deplist span:hover {
+  cursor: pointer;
+}
+
+.cnt-deplist span img.btn-filter {
+  visibility: hidden;
+  float: right;
+  margin-top: -4px;
+}
+
+.cnt-deplist img.icon-pipe {
+  margin-left: -10px;
+  margin-right: 0.5em;
+}
+
+.cnt-deplist select {
+  float: right;
+  background-color: #333;
+  color: #eee;
+  padding: 3px;
+  box-shadow: 0px 0px 3px 2px #999;
+}
+
+.cnt-deplist .btn-open-versionlist {
+  float: right;
+  margin-top: -4px;
+}
+
+.cnt-deplist .cnt-versionlist {
+  margin: 0px -15px -15px -15px;
+  margin-bottom: -20px;
+  padding-left: 0px;
+  background-color: #32383e;
+  padding-left: 5%;
+}
+
+.cnt-deplist .cnt-versionlist ul {
+  background-color: #555a61;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  border-bottom-left-radius: 50%;
+}
+
+.cnt-deplist .cnt-versionlist li {
+  background-color: #555a61;
+  margin: 0;
+  height: 2em;
+  padding: 0.2em 1em;
+  font-size: 110%;
+  border-top: 1px solid #383434;
+  border-left: 1px solid #282222;
+  font-size: 0.88vw;
+}
+
+.cnt-deplist .cnt-versionlist li:last-child {
+  border-radius: 0 0 0 12px;
+}
+
+.cnt-deplist .cnt-versionlist li:hover {
+  background-color: #707784
+}
+
+.cnt-deplist .cnt-versionlist li:nth-child(1) {
+  border-top:0px;
+}
+
+.cnt-deplist .popover {
+  background-color: #5d6368
+}
+
+.txt-hover-ok {
+  color: #18ca18;
+  font-weight: bold;
+  font-size: 120%
+}

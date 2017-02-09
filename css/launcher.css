@@ -1,0 +1,199 @@
+.container-fluid {
+  padding-right: -15px;
+}
+
+body {
+  background-color: #272b30;
+  background: url(../img/bg-2.jpg);
+  background-attachment: fixed;
+}
+
+p {
+  text-align: justify;
+  font-size: 0.95vw;
+  padding-top: 1.2em;
+  padding-bottom: 0.5em;
+  line-height: 170%;
+  font-family: Montserrat
+}
+
+h1 , h2 {
+  color: #459DDE;
+}
+
+.cnt-header {
+  border-bottom: 1px solid #444;
+  height: 4.8em;
+  vertical-align: middle;
+  background-color: #272b30
+}
+
+span.logo-text {
+  color: #c8c8c8;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  vertical-align: middle;
+}
+
+.arrow {
+  font-size: 120;
+  height: 500px;
+  vertical-align: middle;
+}
+
+.userguide {
+  width: 100%;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.userguide img {
+  width: 25vw;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 0px 0px 12px white;
+}
+
+.cnt-launcher-outer  {
+  min-height: 34%;
+  border-radius: 6px;
+  background-color: #4d5054;
+  border: 1px solid #322424;
+}
+
+#tab-examplelist {
+  padding: 3.8em 3.6em;
+}
+
+#tab-customproject {
+  padding: 1em 1em;
+}
+
+.cnt-launcher-outer .select {
+  border: 2px solid #5fbcff;
+  border-radius: 5px;
+  height: 2.05em;
+  vertical-align: middle;
+  color: white;
+  font-family: monospace;
+  font-size: 120%;
+}
+
+.cnt-launcher-outer .select .btn-dropdown {
+  float: right;
+  display: inline-block;
+  background: url(../img/btn.png);
+  background-repeat: round;
+  height: 35px;
+  width: 35px;
+  margin-right: -2px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.cnt-launcher-outer .select .btn-dropdown:hover {
+  background: url(../img/btn-hover.png);
+}
+
+.cnt-launcher-outer .select ul {
+  z-index: 100;
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.35em;
+  opacity: 0.9;
+  background-color: black;
+  border-bottom-left-radius: 10;
+  border-bottom-right-radius: 10;
+  border-left: 1px dotted #eee;
+  border-right: 1px dotted #eee;
+}
+
+.cnt-launcher-outer .select span {
+  line-height: 1.65em;
+  margin-left: 15px;
+}
+
+.cnt-launcher-outer .select li.option {
+  display: none;
+  padding: 5px 15px;
+  margin-right: -6px;
+  cursor: pointer;
+  width: 100%;
+  border-bottom: 1px dotted #eee;
+}
+
+.cnt-launcher-outer .select li.option:hover {
+  background-color: #111;
+}
+
+
+.cnt-launcher-outer .cnt-btn-launch {
+  width: 100%;
+  text-align: center;
+  margin-top: 4.9em;
+}
+
+.btn-launch {
+  bottom: 100px;
+}
+
+.cnt-launcher-outer .form-control {
+  background-color: lightgray;
+}
+
+.cnt-launcher-outer .tab-pane {
+  height: 19em;
+}
+
+.cnt-launcher-outer .cnt-btn-launch-customproject {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.9em;
+}
+
+.nav-tabs li {
+  font-size: 0.9vw;
+}
+
+.nav-tabs li.active {
+  font-weight: bold;
+}
+
+.cnt-launcher-outer .error {
+  border: 1px solid #e81616;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #e24a48;
+  text-align: center;
+  visibility: hidden;
+}
+
+
+.cnt-footer {
+  bottom: 0;
+  position: absolute;
+  padding-top: 6%;
+  text-align: right;
+  overflow-y: hidden;
+  width: 80%;
+}
+
+.cnt-footer .cnt-links {
+  background-color: #272b30;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 0.7% 1% 0 1%;
+  border: 1px solid #b5b5b5;
+  border-bottom: 0;
+}
+
+.cnt-footer a {
+  font-weight: bold;
+  color: #d5d5d5
+  cursor: pointer;
+}

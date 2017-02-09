@@ -1,12 +1,14 @@
+<img class="lbl-dirty" src="img/pipe.png" width="20" height="20" class="icon-pipe" style="visibility: hidden" />
 {{name}}
 {{#if isObsolete}}
 <span class="txt-version text-warning">{{originalVersion.versionNumber}}</span>
-<select>
-   <option value="{{originalVersion.versionNumber.rawVersionString}}">Update to...</option>
-   {{#each suggestedVersions}}
-   <option value="{{value}}">{{label}}</option>
-   {{/each}}
-</select>
 {{else}}
 <span class="txt-version text-success">{{originalVersion.versionNumber}}</span>
 {{/if}}
+<div class="cnt-versionlist" style="display: none">
+   <ul>
+      {{#each suggestedVersions}}
+      <li value="{{value}}">{{label}}</li>
+      {{/each}}
+   </ul>
+</div>

@@ -7,11 +7,9 @@
       </div>
   </div>
   <div class="cnt-left-buttons pull-right">
-						<!-- <label for="chb-show-all-deps">Show All Dependencies</label>
-							<input type="checkbox" id="chb-show-all-deps" checked /> -->
-						<a class="btn btn-default btn-reset" href="#">Reset versions</a>
-						<a class="btn btn-primary btn-view-packagejson" href="#">View my updated package.json</a>
-					</div>
+	<a class="btn btn-default btn-reset" href="#">Reset versions</a>
+    <a class="btn btn-primary btn-view-packagejson btn-redbutton disabled" href="#">View my updated package.json</a>
+  </div>
 
 
           <div class="modal fade" tabindex="-1" role="dialog" id="dlg-package-json">
@@ -19,7 +17,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title">You updated <code>package.json</code> file </h4>
+                  <h4 class="modal-title">Your updated <code>package.json</code> file </h4>
                 </div>
                 <div class="modal-body">
                   <textarea readonly="readonly" cols="65" rows="30" style="font-family: monospace; background-color: lightgray"></textarea>
