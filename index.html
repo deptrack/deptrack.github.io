@@ -1,99 +1,124 @@
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="/img/icon-32x32.png" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-          content="Take control over your javascript dependencies. DepTrack is a tool for quickly gathering information about new versions of your npm dependencies.">
-    <meta name="keywords" content="dependencies, tracking, statistics, dependency tracking, deptrack">
-    <meta name="author" content="deptrack.io">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="DepTrack - Keep an eye on your dependencies">
+    <meta property="og:description" content="Keep an eye on your dependencies. DepTrack is a handy dependency management solution to take control over your NPM modules.">
+    <meta property="og:url" content="http://deptrack.io">
+    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:type" content="website">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="DepTrack - Keep an eye on your dependencies">
+    <meta itemprop="description" content="Keep an eye on your dependencies. DepTrack is a handy dependency management solution to take control over your NPM modules.">
+    <meta itemprop="image" content="img/logo.png">
+    <meta itemprop="url" content="http://deptrack.io">
+    <!-- end of SEO meta information -->
 
-    <title>DepTrack</title>
-    <script type="text/javascript">
-        var _paq = _paq || [];
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function () {
-            if (window.location == "localhost" || window.location.hostname == "localhost") {
-                return;
-            }
-            var u = "//piwik.cyclonephp.org/";
-            _paq.push(['setTrackerUrl', u + 'piwik.php']);
-            _paq.push(['setSiteId', 1]);
-            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-            g.type = 'text/javascript';
-            g.async = true;
-            g.defer = true;
-            g.src = '/js/piwik.js';
-            s.parentNode.insertBefore(g, s);
-        })();
+
+        <link rel="icon" type="image/png" href="/img/icon-32x32.png" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+              content="Take control over your javascript dependencies. DepTrack is a tool for quickly gathering information about new versions of your npm dependencies.">
+        <meta name="keywords" content="dependencies, tracking, statistics, dependency tracking, deptrack">
+        <meta name="author" content="deptrack.io">
+
+        <title>DepTrack - Keep an eye on your dependencies</title>
+        <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                if (window.location == "localhost" || window.location.hostname == "localhost") {
+                    return;
+                }
+                var u = "//piwik.cyclonephp.org/";
+                _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                _paq.push(['setSiteId', 1]);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.type = 'text/javascript';
+                g.async = true;
+                g.defer = true;
+                g.src = '/js/piwik.js';
+                s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+
+        <script  data-bootstrap="main/app" src="js/require.js"></script>
+    <script>
+        require(["bundled"], function() {
+            require(["main/app"], function(app) {
+                app();
+            })
+        });
     </script>
 
-    <script data-main="js/config.js" data-bootstrap="main/app" src="bower_components/requirejs/require.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-slate/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/app.css"/>
-    <link rel="stylesheet" type="text/css" href="css/deplist.css"/>
-    <link rel="stylesheet" type="text/css" href="css/newsfeed.css"/>
-    <link rel="stylesheet" type="text/css" href="css/launcher.css"/>
-    <link rel="stylesheet" type="text/css" href="css/progressbar.css"/>
-    <link rel="stylesheet" type="text/css" href="css/notifications.css"/>
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-</head>
-<body>
-<div class="container-fluid">
-    <div class="row cnt-header">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <img class="logo" src="img/logo.png" height="50" width="150">
-            <span class="light logo-text"> ~ keep an eye on your dependencies</span>
-        </div>
-        <div class="col-lg-2"></div>
-    </div>
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-4">
-            <h1>Welcome to DepTrack</h1>
-            <p>
-                DepTrack is a handy dependency management solution to take control over your npm modules.
-            </p>
-            <p>
-                Just provide your npm package.json file and DepTrack will give you detailed information about your dependencies' latest versions.
-                Take a look at your dependencies' contribution activity like recently opened issues, pull requests and git commits.
-            </p>
-        </div>
-        <div class="col-lg-4">
-            <h1>Try it out</h1>
-            <div class="cnt-launcher-outer">
-
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-slate/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/app.css"/>
+        <link rel="stylesheet" type="text/css" href="css/deplist.css"/>
+        <link rel="stylesheet" type="text/css" href="css/newsfeed.css"/>
+        <link rel="stylesheet" type="text/css" href="css/launcher.css"/>
+        <link rel="stylesheet" type="text/css" href="css/progressbar.css"/>
+        <link rel="stylesheet" type="text/css" href="css/notifications.css"/>
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div class="container-fluid">
+        <div class="row cnt-header">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <img class="logo" src="img/logo.png" height="50" width="150"
+                     alt="DepTrack is a handy dependency management solution to take control over your NPM modules.">
+                <span class="light logo-text"> ~ keep an eye on your dependencies</span>
             </div>
+            <div class="col-lg-2"></div>
         </div>
-        <div class="col-lg-2"></div>
-    </div>
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <h1>How does it work?</h1>
-            <div class="userguide">
-                <img src="img/screenshot-1.png" width="500" height="281"/>
-                <span class="arrow">&nbsp;&raquo;&nbsp;</span>
-                <img src="img/screenshot-2.png" width="500" height="281"/>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 update-npm-dependencies" id="update-npm-dependencies">
+                <h1>Welcome to DepTrack</h1>
+                <p>
+                    DepTrack is a handy dependency management solution to take control over your npm modules.
+                </p>
+                <p>
+                    Just provide your npm package.json file and DepTrack will give you detailed information about your dependencies' latest versions.
+                    Take a look at your dependencies' contribution activity like recently opened issues, pull requests and git commits.
+                </p>
             </div>
-        </div>
-        <div class="col-lg-2"></div>
-    </div>
+            <div class="col-lg-4">
+                <h1>Try it out</h1>
+                <div class="cnt-launcher-outer">
 
-    <div class="cnt-footer">
-          <span class="cnt-links">
-            <a href="/privacy.html">Privacy Policy</a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="/terms.html">Terms of Use</a>
-          </span>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h1>How does it work?</h1>
+                <div class="userguide" id="userguide">
+                    <img src="img/screenshot-1.png" width="500" height="281"
+                         alt="Provide your npm package.json file and see detailed information about your dependencies' latest versions."/>
+                    <span class="arrow">&nbsp;&raquo;&nbsp;</span>
+                    <img src="img/screenshot-2.png" width="500" height="281"
+                         alt="Get your package.json file with the updated dependencies."/>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+        <div class="cnt-footer">
+              <span class="cnt-links">
+                <a href="/privacy.html">Privacy Policy</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/terms.html">Terms of Use</a>
+              </span>
+        </div>
     </div>
-</div>
-</body>
-</html>
+    </body>
+    </html>
