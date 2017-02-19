@@ -54,9 +54,6 @@
         });
     </script>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
         <link rel="stylesheet" type="text/css" href="css/bootstrap-slate/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/app.css"/>
         <link rel="stylesheet" type="text/css" href="css/deplist.css"/>
@@ -71,8 +68,10 @@
         <div class="row cnt-header">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
+                <a href="/">
                 <img class="logo" src="img/logo.png" height="50" width="150"
                      alt="DepTrack is a handy dependency management solution to take control over your NPM modules.">
+                </a>
                 <span class="light logo-text"> ~ keep an eye on your dependencies</span>
             </div>
             <div class="col-lg-2"></div>
@@ -82,11 +81,12 @@
             <div class="col-lg-4 update-npm-dependencies" id="update-npm-dependencies">
                 <h1>Welcome to DepTrack</h1>
                 <p>
-                    DepTrack is a handy dependency management solution to take control over your npm modules.
+                    DepTrack is a handy dependency management tool to take control over your npm modules.
+                    Just provide your package.json file for DepTrack, and it will collect everything you need to know about your dependencies.
                 </p>
                 <p>
-                    Just provide your npm package.json file and DepTrack will give you detailed information about your dependencies' latest versions.
-                    Take a look at your dependencies' contribution activity like recently opened issues, pull requests and git commits.
+                    It helps you to be well-informed about your depencencies' contribution activities, so
+                    you are empowered with sufficient information to make responsible decisions about depencency upgrades.
                 </p>
             </div>
             <div class="col-lg-4">
@@ -103,10 +103,12 @@
                 <h1>How does it work?</h1>
                 <div class="userguide" id="userguide">
                     <img src="img/screenshot-1.png" width="500" height="281"
-                         alt="Provide your npm package.json file and see detailed information about your dependencies' latest versions."/>
+                         alt="Provide your npm package.json file and see detailed information about your dependencies' latest versions."
+                         title="Provide your npm package.json file and see detailed information about your dependencies' latest versions."/>
                     <span class="arrow">&nbsp;&raquo;&nbsp;</span>
                     <img src="img/screenshot-2.png" width="500" height="281"
-                         alt="Get your package.json file with the updated dependencies."/>
+                         alt="Get your package.json file with the updated dependencies."
+                         title="Get your package.json file with the updated dependencies."/>
                 </div>
             </div>
             <div class="col-lg-2"></div>
