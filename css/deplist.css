@@ -98,3 +98,16 @@
   font-weight: bold;
   font-size: 120%
 }
+
+
+.popover-green {
+  background-color: #4e8810
+}
+
+.popover-green .arrow {
+  border-right-color: rgba(78, 136, 10, 0.85) !important;
+}
+
+.popover-green .arrow:after {
+  border-right-color: rgba(78, 136, 10, 0.85) !important;
+}
