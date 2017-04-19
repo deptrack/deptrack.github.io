@@ -93,3 +93,36 @@
 .cnt-newsfeed .cnt-newsfeed-entry.collapsed:hover .more {
   background-color: rgba(80,80,80,0.7);
 }
+
+.cnt-newsfeed-entry-events-summary {
+    margin-left: 20%;
+    margin-bottom: 1.8em;
+}
+
+.cnt-newsfeed-entry-event {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 0.6em;
+}
+
+.cnt-newsfeed-entry-event.comments {
+  background-color: #2c70da;
+  border: 1px solid #3134bb;
+}
+
+.cnt-newsfeed-entry-event.pullrequest {
+  background-color: #7446ad;
+  border: 1px solid #7120c5;
+}
+
+.cnt-newsfeed-entry-event.issueclose {
+  background-color: #a0230d;
+  border: 1px solid #92171b;
+}
+
+
+.jumbotron p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
